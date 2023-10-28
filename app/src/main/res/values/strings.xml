@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prof Testium</string>
+    <string name="sign_in">Войдите в систему</string>
+    <string name="phone_number">Телефон</string>
+    <string name="password">Пароль</string>
+    <string name="to_come_in">Войти</string>
+    <string name="support">Поддержка</string>
+    <string name="training">Обучение</string>
+    <string name="profile">Профиль</string>
+    <string name="lectures">Лекции</string>
+</resources>
