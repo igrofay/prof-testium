@@ -29,7 +29,7 @@ fun ManagerContentNav() {
     ) { paddingContent ->
         NavHost(
             navController = navController,
-            startDestination = ManagerContentRouting.Support.route,
+            startDestination = ManagerContentRouting.Analytics.route,
             modifier = Modifier
                 .padding(paddingContent)
                 .fillMaxSize()
