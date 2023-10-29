@@ -1,4 +1,4 @@
-package five.head.proftestium.auth.view
+package five.head.proftestium.profle_user.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -10,29 +10,30 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import five.head.hakaton.common.ui.click.scaleClick
 
 @Composable
 fun CustomButton(
-    text: String,
+    label: String,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    onClick: ()->Unit,
+    onClick: ()->Unit
 ) {
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .clickable(enabled, onClick = onClick)
-            .background(Color.White)
-            .padding(vertical = 20.dp),
+            .alpha(if (enabled) 1f else 0.7f)
+            .background(MaterialTheme.colors.primary)
+            .clickable(enabled= enabled,onClick = onClick)
+            .padding(vertical = 13.dp),
         contentAlignment = Alignment.Center
     ){
         Text(
-            text = text,
-            style = MaterialTheme.typography.subtitle2
-                .copy(color = MaterialTheme.colors.primary),
+            text = label,
+            style = MaterialTheme.typography.subtitle1
+                .copy(Color.White)
         )
     }
 }

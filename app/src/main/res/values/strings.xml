@@ -8,4 +8,13 @@
     <string name="training">Обучение</string>
     <string name="profile">Профиль</string>
     <string name="lectures">Лекции</string>
+    <string name="coming_soon">Скоро</string>
+    <string name="phone_not_found">Телефон не найден</string>
+    <string name="wrong_password">Неправильный пароль</string>
+    <string name="change_password">Сменить пароль</string>
+    <string name="notifications">Уведомления</string>
+    <string name="fio">ФИО</string>
+    <string name="email">e-mail</string>
+    <string name="language">Язык</string>
+    <string name="save">Сохранить</string>
 </resources>

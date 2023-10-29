@@ -29,6 +29,10 @@ val TypographyDefault = Typography(
         fontWeight = FontWeight.W900,
         fontSize = 20.sp,
     ),
+    subtitle1 = TextStyle(
+        fontWeight = FontWeight.W700,
+        fontSize = 16.sp,
+    ),
     subtitle2 = TextStyle(
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,

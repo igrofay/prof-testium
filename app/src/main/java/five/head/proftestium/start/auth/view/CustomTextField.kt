@@ -1,4 +1,4 @@
-package five.head.proftestium.auth.view
+package five.head.proftestium.start.auth.view
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
@@ -30,6 +31,7 @@ fun CustomTextField(
     modifier: Modifier = Modifier,
     keyboardActions: KeyboardActions = KeyboardActions.Default,
     keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
+    visualTransformation: VisualTransformation = VisualTransformation.None,
 ) {
     BasicTextField(
         value = value,
@@ -44,6 +46,7 @@ fun CustomTextField(
         cursorBrush = SolidColor(Color.White),
         textStyle = MaterialTheme.typography.subtitle2
             .copy(Color.White, textAlign = TextAlign.Center),
+        visualTransformation = visualTransformation,
     ){ innerTextField ->
         Box(
             modifier = Modifier

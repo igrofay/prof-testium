@@ -26,7 +26,7 @@ fun AppTheme(
     SideEffect {
         activity?.window?.let {window->
             WindowCompat
-                .getInsetsController(window, window.decorView).isAppearanceLightStatusBars = true // !isDark
+                .getInsetsController(window, window.decorView).isAppearanceLightStatusBars = false // !isDark
         }
     }
     MaterialTheme(
