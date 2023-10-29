@@ -7,5 +7,6 @@ import five.head.core.domain.model.analytics.TestAnalyticsDepartmentModel
 data class TestAnalyticsState(
     val listDepartment: List<DepartmentInfoModel> = listOf(),
     val currentDepartment: DepartmentInfoModel? = null,
-    val listAnalyticsOnUserTest: List<TestAnalyticsDepartmentModel> = listOf(),
+    val listAnalyticsDepartment: List<TestAnalyticsDepartmentModel> = listOf(),
+    val listAnalyticsOnUserTest: List<AnalyticsOnUserTestModel> = listOf(),
 )
