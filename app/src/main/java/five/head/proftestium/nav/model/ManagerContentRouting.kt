@@ -15,6 +15,12 @@ sealed class ManagerContentRouting(
         R.string.support,
         R.drawable.chat,
     )
+    data object Analytics :
+        EmployeeContentRouting(
+            "${route}_training",
+            R.string.analytics,
+            R.drawable.activity
+        )
     data object Profile : ManagerContentRouting(
         "${route}_profile",
         R.string.profile,
@@ -22,6 +28,6 @@ sealed class ManagerContentRouting(
     )
     companion object{
         const val route = "manager_content_routing"
-        val items by lazy { listOf<BottomNavItem>(Support, Profile) }
+        val items by lazy { listOf<BottomNavItem>(Support,Analytics, Profile) }
     }
 }

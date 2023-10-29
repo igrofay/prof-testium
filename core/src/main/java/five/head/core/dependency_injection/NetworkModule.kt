@@ -2,7 +2,9 @@ package five.head.core.dependency_injection
 
 import android.util.Log
 import five.head.core.data.data_source.network.AuthApi
+import five.head.core.data.data_source.network.LecternApi
 import five.head.core.data.data_source.network.ProfileUserApi
+import five.head.core.data.data_source.network.TestApi
 import five.head.core.domain.repos.UserRepos
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
@@ -62,6 +64,12 @@ internal val NetworkModule by DI.Module {
     }
     bindProvider {
         ProfileUserApi(instance(AUTHORIZED_CLIENT))
+    }
+    bindProvider {
+        LecternApi(instance(AUTHORIZED_CLIENT))
+    }
+    bindProvider {
+        TestApi(instance(AUTHORIZED_CLIENT))
     }
 }
 
