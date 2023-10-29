@@ -2,6 +2,7 @@ package five.head.core.dependency_injection
 
 import android.util.Log
 import five.head.core.data.data_source.network.AuthApi
+import five.head.core.data.data_source.network.DepartmentApi
 import five.head.core.data.data_source.network.LecternApi
 import five.head.core.data.data_source.network.ProfileUserApi
 import five.head.core.data.data_source.network.TestApi
@@ -70,6 +71,9 @@ internal val NetworkModule by DI.Module {
     }
     bindProvider {
         TestApi(instance(AUTHORIZED_CLIENT))
+    }
+    bindProvider {
+        DepartmentApi(instance(AUTHORIZED_CLIENT))
     }
 }
 

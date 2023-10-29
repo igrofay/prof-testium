@@ -20,4 +20,9 @@ internal class TestApi(
             setBody(result)
             contentType(ContentType.Application.Json)
         }
+    suspend fun getDepartmentAnalytics(idDepartment: String) = authClient
+        .get("/api/tests/analutic/$idDepartment")
+
+    suspend fun getAnalyticsOnUserTests(idUser: String) = authClient
+        .get("/api/tests/analytics/$idUser")
 }
